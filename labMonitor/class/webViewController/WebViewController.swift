@@ -78,6 +78,7 @@ class WebViewController: UIViewController {
         "wyCommon.hideBottomTabBar = function(param) {window.webkit.messageHandlers.hideBottomTabBar.postMessage(param);};" +
         "wyCommon.getUserInfo = function() {return JSON.parse(sessionStorage.getItem('getUserInfo'));};" +
         "wyCommon.nativePrint = function(s) {window.webkit.messageHandlers.nativePrint.postMessage(s);};"
+        + "wyCommon.openLoginView = function() {window.webkit.messageHandlers.openLoginView.postMessage('open');};"
         // 根据JS字符串初始化WKUserScript对象
         let userScript = WKUserScript(source: jsStr, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
         userContentController.addUserScript(userScript)
@@ -87,6 +88,7 @@ class WebViewController: UIViewController {
         userContentController.add(self, name: KhideBottomTabBar)
         userContentController.add(self, name: Kpopwarn)
         userContentController.add(self, name: KnativePrint)
+        userContentController.add(self, name: KopenLoginView)
 
         // 根据生成的WKUserScript对象，初始化WKWebViewConfiguration
         webConfiguration.userContentController = userContentController
@@ -257,6 +259,8 @@ extension WebViewController: WKScriptMessageHandler{
                 
                 self.present(alertVC, animated: false, completion: nil)
             }
+        case KopenLoginView:
+            UIApplication.shared.keyWindow?.rootViewController = BaseNavigationController.init(rootViewController: LoginViewController())
         default:
             HCPrint(message: message.body)
         }

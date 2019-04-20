@@ -41,7 +41,7 @@ DEPENDENCIES:
   - UMCSecurityPlugins
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - MJExtension
     - MJRefresh
@@ -65,6 +65,6 @@ SPEC CHECKSUMS:
   UMCPush: 6d67ff5ca853857e2690abbdaecb86b254b1f823
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
 
-PODFILE CHECKSUM: 9b5fcec13b12934f04da7eb6b628688684108942
+PODFILE CHECKSUM: 7cdfa08b83a790e0a7fdea7e6d36f243beb41acd
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.0

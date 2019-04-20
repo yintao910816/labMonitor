@@ -53,6 +53,7 @@ let kBackgroundColor = UIColor.init(red: 244/255.0, green: 248/255.0, blue: 255/
 
 
 let KopenUserSettingView = "openUserSettingView"
+let KopenLoginView = "openLoginView"
 let KhideBottomTabBar = "hideBottomTabBar"
 let KgetUserInfo = "getUserInfo"
 let Kpopwarn = "popwarn"

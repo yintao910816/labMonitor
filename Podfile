@@ -1,10 +1,7 @@
 platform :ios, '9.0'
+use_frameworks!
 
 target ‘labMonitor’ do
-
-project '/Users/yintao/Desktop/laboratory_monitoring/labMonitor.xcodeproj'
-
-use_frameworks!
 
 pod 'UMCCommon'
 pod 'UMCSecurityPlugins'

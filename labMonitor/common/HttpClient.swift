@@ -59,7 +59,7 @@ extension HttpClient {
         
         let url = URLString == HC_LOGIN ? URLString : URLString + "?token=\(UserManager.shareIntance.currentUser?.token ?? "")"
 
-        HCmanager.get(url, parameters: parameters, progress: { (progress) in
+        HCmanager.get(url, parameters: parameters, headers: nil, progress: { (progress) in
             //
         }, success: { [weak self](task : URLSessionDataTask, responseObject : Any?) in
             
@@ -128,7 +128,7 @@ extension HttpClient {
 //
 //        }
         let url = URLString == HC_LOGIN ? URLString : URLString + "?token=\(UserManager.shareIntance.currentUser?.token ?? "")"
-        HCmanager.post(url, parameters: parameters, progress: { (progress) in
+        HCmanager.post(url, parameters: parameters, headers: nil, progress: { (progress) in
             //
         }, success: { [weak self](task : URLSessionDataTask, responseObject : Any) in
             HCPrint(message: URLString)
@@ -229,7 +229,7 @@ extension HttpClient {
         
         let urlS = "http://itunes.apple.com/lookup?id=" + kAppID
         
-        HCmanager.get(urlS, parameters: nil, progress: { (progress) in
+        HCmanager.get(urlS, parameters: nil, headers: nil, progress: { (progress) in
             //
         }, success: { (task, any) in
             

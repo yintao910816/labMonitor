@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## AFNetworking
 
-Copyright (c) 2011-2016 Alamofire Software Foundation (http://alamofire.org/)
+Copyright (c) 2011-2020 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,7 +26,7 @@ THE SOFTWARE.
 
 ## MJExtension
 
-Copyright (c) 2013-2015 MJExtension (https://github.com/CoderMJLee/MJExtension)
+Copyright (c) 2013-2019 MJExtension (https://github.com/CoderMJLee/MJExtension)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -72,7 +72,7 @@ THE SOFTWARE.
 
 ## SDWebImage
 
-Copyright (c) 2009-2017 Olivier Poitrey rs@dailymotion.com
+Copyright (c) 2009-2020 Olivier Poitrey rs@dailymotion.com
  
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -142,22 +142,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## UMCAnalytics
-
-Copyright 2011 - 2018 umeng.com. All rights reserved.
-
-
 ## UMCCommon
 
-Copyright 2011 - 2018 umeng.com. All rights reserved.
+Copyright 2011 - 2019 umeng.com. All rights reserved.
 
 
 ## UMCPush
-
-Copyright 2011 - 2018 umeng.com. All rights reserved.
-
-
-## UMCSecurityPlugins
 
 Copyright 2011 - 2018 umeng.com. All rights reserved.
 

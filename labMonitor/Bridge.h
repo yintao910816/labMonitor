@@ -11,7 +11,7 @@
 
 
 #import <UMCommon/UMCommon.h>         
-#import <UMAnalytics/MobClick.h>
+//#import <UMAnalytics/MobClick.h>
 #import <UMPush/UMessage.h>
 
 

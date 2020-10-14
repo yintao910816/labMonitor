@@ -4,9 +4,9 @@ use_frameworks!
 target ‘labMonitor’ do
 
 pod 'UMCCommon'
-pod 'UMCSecurityPlugins'
+#pod 'UMCSecurityPlugins'
 
-pod 'UMCAnalytics'
+#pod 'UMCAnalytics'
 
 pod 'UMCPush'
 

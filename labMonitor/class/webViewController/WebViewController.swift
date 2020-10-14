@@ -112,6 +112,7 @@ class WebViewController: UIViewController {
         
         let statusBarV = UIView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: space.topSpace))
         statusBarV.backgroundColor = kDefaultThemeColor
+        statusBarV.tag = 1000
         view.addSubview(statusBarV)
         
         SVProgressHUD.show()
@@ -120,6 +121,13 @@ class WebViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        webView?.frame = view.bounds
+        view.viewWithTag(1000)?.frame = .init(x: 0, y: 0, width: view.frame.size.width, height: AppDelegate.shareIntance.space.topSpace)
     }
     
 }
